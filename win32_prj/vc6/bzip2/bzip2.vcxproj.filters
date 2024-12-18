@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1682fe6c-d6c9-4faf-9f9f-aff5a0f516f3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9292c1a1-d8e0-4f0a-abb2-eb88169051f7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\blocksort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\bzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\crctable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\decompress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\huffman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\bzip2-1.0.4\randtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\bzip2-1.0.4\bzlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\bzip2-1.0.4\bzlib_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\bzip2-1.0.4\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\bzip2-1.0.4\LICENSE" />
+    <CustomBuild Include="..\..\..\extlib\src\bzip2-1.0.4\README" />
+  </ItemGroup>
+</Project>

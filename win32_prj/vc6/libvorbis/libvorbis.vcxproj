@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{6FD768D1-8F04-435B-8D41-AA02D66B51F3}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libvorbis-1.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\libvorbis.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\libvorbis.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\libvorbis.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libvorbis-1.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\libvorbis.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\libvorbis.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\libvorbis.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\coupled\res_books_stereo.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\floor\floor_books.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\uncoupled\res_books_uncoupled.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\floor_all.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_11.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_16.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_44.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_8.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_16.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_44.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_44u.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_8.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_11.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_16.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_22.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_32.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_44.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_44u.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_8.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_X.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\backends.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\bitrate.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codebook.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codec_internal.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\envelope.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\highlevel.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup_data.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lpc.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lsp.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\masking.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mdct.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\misc.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\os.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psy.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\registry.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\scales.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\smallft.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\window.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\codec.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\vorbisenc.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\vorbisfile.h" />
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\bookutil.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\localcodebook.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqext.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqgen.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqsplit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\analysis.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\barkmel.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\bitrate.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\block.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codebook.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\envelope.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\floor0.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\floor1.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\info.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lpc.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lsp.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mapping0.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mdct.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psy.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psytune.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\registry.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\res0.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\sharedbook.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\smallft.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\synthesis.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\tone.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\vorbisenc.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\vorbisfile.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\window.c" />
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\bookutil.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\build.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\cascade.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\distribution.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\genericdata.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\huffbuild.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticebuild.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticehint.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticepare.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticetune.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\lspdata.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\metrics.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residuedata.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residuesplit.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\run.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\train.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqgen.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqsplit.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookups.pl" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\16.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\16u.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c-1.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c0.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c1.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c2.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c3.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c4.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c5.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c6.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c7.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c8.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c9.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u0.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u1.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u2.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u3.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u4.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u5.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u6.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u7.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u8.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u9.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\8.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\8u.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\auxpartition.pl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_11.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_22.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_44.vqs">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\make_floor_books.pl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\make_residue_books.pl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\Makefile.am">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\Makefile.in">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residue_entropy">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\acinclude.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\AUTHORS" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.h.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\COPYING" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\libvorbis.spec.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\README" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisenc-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisenc.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisfile-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisfile.pc.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\libvorbis-1.2.0\todo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

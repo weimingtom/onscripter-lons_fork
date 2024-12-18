@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a254fe48-3eca-4df7-9563-6c996dd52c07}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0f1011ca-a756-49fd-8b6f-f1ace31ab094}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{41b1381e-d64d-4128-b4f2-f0774e48b40b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pnggccrd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngvcrd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\libpng-1.2.24\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libpng-1.2.24\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\libpng-1.2.24\scripts\CMakeLists.txt">
+      <Filter>scripts</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\descrip.mms">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config-body.in">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config-head.in">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config.in">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.icc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.pc-configure.in">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.pc.in">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.32sunu">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.64sunu">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.acorn">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.aix">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.amiga">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.atari">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.bc32">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.beos">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.bor">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.cygwin">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.darwin">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.dec">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.dj2">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.elf">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.freebsd">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.gcc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.gcmmx">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hp64">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hpgcc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hpux">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.ibmc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.intel">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.knr">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.linux">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.mingw">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.mips">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.msc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.ne12bsd">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.netbsd">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.nommx">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.openbsd">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.os2">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sco">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sggcc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sgi">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.so9">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.solaris">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.solaris-x86">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.std">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sunos">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.tc3">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.vcawin32">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.vcwin32">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.watcom">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\pngos2.def">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\pngw32.def">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\SCOPTIONS.ppc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\smakefile.ppc">
+      <Filter>scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\ANNOUNCE" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.h.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\INSTALL" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\KNOWNBUG" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\LICENSE" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\README" />
+  </ItemGroup>
+</Project>

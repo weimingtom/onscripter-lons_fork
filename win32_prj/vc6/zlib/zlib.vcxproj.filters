@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fb482b2c-0438-4faf-a61f-12b0b5955794}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1e0937f2-a07d-4e0d-b20c-62900c82ffb5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\gzio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\zlib-1.2.3\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\zconf.in.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\zlib-1.2.3\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\zlib-1.2.3\algorithm.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\ChangeLog" />
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\FAQ" />
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\INDEX" />
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\Makefile" />
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\zlib-1.2.3\README" />
+  </ItemGroup>
+</Project>

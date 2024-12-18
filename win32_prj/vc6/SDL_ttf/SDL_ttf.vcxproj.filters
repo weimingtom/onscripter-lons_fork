@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{49324635-af96-49f9-ae8b-f6c937249d99}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4dc3b182-2d0b-4f0c-9c66-3c624fffa253}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\glfont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\SDL_ttf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\showfont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\SDL_ttf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\CHANGES.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\CMakeLists.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\COPYING.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\Android.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\compile" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\SDL2_ttf.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\SDL2_ttf.spec" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_ttf-2.0.15\SDL2_ttf.spec.in" />
+  </ItemGroup>
+</Project>

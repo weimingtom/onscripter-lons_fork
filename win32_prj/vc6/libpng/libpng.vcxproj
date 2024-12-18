@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{C50C1AB2-BD37-4CA6-9D78-CA781736E478}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\zlib-1.2.3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\libpng.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\libpng.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\libpng.lib</OutputFile>
+    </Lib>
+    <Link>
+      <ModuleDefinitionFile>..\..\..\extlib\src\libpng-1.2.24\scripts\pngos2.def</ModuleDefinitionFile>
+    </Link>
+    <Link>
+      <ModuleDefinitionFile>..\..\..\extlib\src\libpng-1.2.24\scripts\pngw32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\zlib-1.2.3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\libpng.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\libpng.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\libpng.lib</OutputFile>
+    </Lib>
+    <Link>
+      <ModuleDefinitionFile>..\..\..\extlib\src\libpng-1.2.24\scripts\pngos2.def</ModuleDefinitionFile>
+    </Link>
+    <Link>
+      <ModuleDefinitionFile>..\..\..\extlib\src\libpng-1.2.24\scripts\pngw32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\png.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngerror.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pnggccrd.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngget.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngmem.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngpread.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngread.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrio.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrtran.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngrutil.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngset.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngtrans.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngvcrd.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwio.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwrite.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwtran.c" />
+    <ClCompile Include="..\..\..\extlib\src\libpng-1.2.24\pngwutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\libpng-1.2.24\png.h" />
+    <ClInclude Include="..\..\..\extlib\src\libpng-1.2.24\pngconf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\libpng-1.2.24\scripts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\descrip.mms" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config-body.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config-head.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng-config.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.icc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.pc-configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\libpng.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.32sunu" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.64sunu" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.acorn" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.aix" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.amiga" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.atari" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.bc32" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.beos" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.bor" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.cygwin" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.darwin" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.dec" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.dj2" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.elf" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.freebsd" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.gcc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.gcmmx" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hp64" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hpgcc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.hpux" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.ibmc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.intel" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.knr" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.linux" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.mingw" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.mips" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.msc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.ne12bsd" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.netbsd" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.nommx" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.openbsd" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.os2" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sco" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sggcc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sgi" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.so9" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.solaris" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.solaris-x86" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.std" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.sunos" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.tc3" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.vcawin32" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.vcwin32" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\makefile.watcom" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\pngos2.def" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\pngw32.def" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\SCOPTIONS.ppc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\scripts\smakefile.ppc" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\ANNOUNCE" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.h.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\INSTALL" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\KNOWNBUG" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\LICENSE" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\libpng-1.2.24\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

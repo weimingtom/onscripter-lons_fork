@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="native_midi">
+      <UniqueIdentifier>{0c82af5c-78cf-423b-ae7a-a48056aebecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timidity">
+      <UniqueIdentifier>{58542547-a35c-4334-9653-e33214414ab5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi.h">
+      <Filter>native_midi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_common.h">
+      <Filter>native_midi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\common.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\instrum.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\mix.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\options.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\output.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\playmidi.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\readmidi.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\resample.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\tables.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\timidity.h">
+      <Filter>timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effects_internal.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_aiff.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_voc.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\mixer.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_cmd.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_flac.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_fluidsynth.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mad.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mikmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_modplug.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mpg123.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_nativemidi.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_ogg.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_opus.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_timidity.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_wav.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL_mixer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_common.c">
+      <Filter>native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_haiku.cpp">
+      <Filter>native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_mac.c">
+      <Filter>native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_macosx.c">
+      <Filter>native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_win32.c">
+      <Filter>native_midi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\common.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\instrum.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\mix.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\output.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\playmidi.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\readmidi.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\resample.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\tables.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\timidity.c">
+      <Filter>timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effect_position.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effect_stereoreverse.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effects_internal.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_aiff.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_voc.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\mixer.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_cmd.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_flac.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_fluidsynth.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mad.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mikmod.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_modplug.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mpg123.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_nativemidi.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_ogg.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_opus.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_timidity.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_wav.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\playmus.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\playwave.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\CHANGES.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\COPYING.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\Android.mk">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\CHANGES">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\COPYING">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\FAQ">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\README">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\TODO">
+      <Filter>timidity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\Android.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL2_mixer.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL2_mixer.spec.in" />
+  </ItemGroup>
+</Project>

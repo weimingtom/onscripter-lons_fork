@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{86D72AE0-EC69-49CB-8E12-276B9BB976A7}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\bzip2-1.0.4;..\..\..\extlib\src\freetype-2.3.5\include;..\..\..\extlib\src\jpeg-6b;..\jpeg;..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libpng-1.2.24;..\..\..\extlib\src\libvorbis-1.2.0\include;..\..\..\extlib\src\SDL2-2.0.10\include;..\..\..\extlib\src\SDL2_image-2.0.5;..\..\..\extlib\src\SDL2_mixer-2.0.4;..\..\..\extlib\src\SDL2_ttf-2.0.15;..\..\..\extlib\src\smpeg;..\..\..\extlib\src\zlib-1.2.3;..\SDL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USE_OGG_VORBIS;DECLSPEC=;SDL_DYNAMIC_API=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\onscripter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\onscripter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\onscripter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\onscripter.exe</OutputFile>
+      <AdditionalDependencies>imm32.lib;version.lib;winmm.lib;dxguid.lib;SDL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../SDL/Debug</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\bzip2-1.0.4;..\..\..\extlib\src\freetype-2.3.5\include;..\..\..\extlib\src\jpeg-6b;..\jpeg;..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libpng-1.2.24;..\..\..\extlib\src\libvorbis-1.2.0\include;..\..\..\extlib\src\SDL2-2.0.10\include;..\..\..\extlib\src\SDL2_image-2.0.5;..\..\..\extlib\src\SDL2_mixer-2.0.4;..\..\..\extlib\src\SDL2_ttf-2.0.15;..\..\..\extlib\src\smpeg;..\..\..\extlib\src\zlib-1.2.3;..\SDL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;USE_OGG_VORBIS;DECLSPEC=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\onscripter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\onscripter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\onscripter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\onscripter.exe</OutputFile>
+      <AdditionalDependencies>winmm.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\File\LOCompressInfo.cpp" />
+    <ClCompile Include="..\..\..\File\LOFileModule.cpp" />
+    <ClCompile Include="..\..\..\File\LOPackFile.cpp" />
+    <ClCompile Include="..\..\..\LONS_main.cpp" />
+    <ClCompile Include="SDL_windows_main.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Audio\LOAudioElement.cpp" />
+    <ClCompile Include="..\..\..\Audio\LOAudioModule.cpp" />
+    <ClCompile Include="..\..\..\etc\BinArray.cpp" />
+    <ClCompile Include="..\..\..\etc\LOCodePage_.cpp" />
+    <ClCompile Include="..\..\..\etc\LOEvent1.cpp" />
+    <ClCompile Include="..\..\..\etc\LOMessage.cpp" />
+    <ClCompile Include="..\..\..\etc\LOString.cpp" />
+    <ClCompile Include="..\..\..\Render\LOAnimation.cpp" />
+    <ClCompile Include="..\..\..\Render\LOEffect.cpp" />
+    <ClCompile Include="..\..\..\Render\LOFontBase.cpp" />
+    <ClCompile Include="..\..\..\Render\LOFontInfo.cpp" />
+    <ClCompile Include="..\..\..\Render\LOImageModule.cpp" />
+    <ClCompile Include="..\..\..\Render\LOImageModule2.cpp" />
+    <ClCompile Include="..\..\..\Render\LOImageModule_command.cpp" />
+    <ClCompile Include="..\..\..\Render\LOLayer.cpp" />
+    <ClCompile Include="..\..\..\Render\LOLayerInfo.cpp" />
+    <ClCompile Include="..\..\..\Render\LOMatrix2d.cpp" />
+    <ClCompile Include="..\..\..\Render\LOSurface.cpp" />
+    <ClCompile Include="..\..\..\Render\LOTexture.cpp" />
+    <ClCompile Include="..\..\..\Scripter\FuncInterface.cpp" />
+    <ClCompile Include="..\..\..\Scripter\LOCodePage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\LOScriptPoint.cpp" />
+    <ClCompile Include="..\..\..\Scripter\LOScriptReader.cpp" />
+    <ClCompile Include="..\..\..\Scripter\LOScriptReader_command.cpp" />
+    <ClCompile Include="..\..\..\Scripter\ONSvariable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ons-en.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="onscripter.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="0.txt" />
+    <Text Include="vc6_change.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="default.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Audio\LOAudioElement.h" />
+    <ClInclude Include="..\..\..\Audio\LOAudioModule.h" />
+    <ClInclude Include="..\..\..\etc\BinArray.h" />
+    <ClInclude Include="..\..\..\etc\GBK.h" />
+    <ClInclude Include="..\..\..\etc\LOCodePage_.h" />
+    <ClInclude Include="..\..\..\etc\LOEvent1.h" />
+    <ClInclude Include="..\..\..\etc\LOMessage.h" />
+    <ClInclude Include="..\..\..\etc\LOStack.h" />
+    <ClInclude Include="..\..\..\etc\LOString.h" />
+    <ClInclude Include="..\..\..\File\consola.h" />
+    <ClInclude Include="..\..\..\File\LOCompressInfo.h" />
+    <ClInclude Include="..\..\..\File\LOFileModule.h" />
+    <ClInclude Include="..\..\..\File\LOPackFile.h" />
+    <ClInclude Include="..\..\..\File\SiYuanCN.h" />
+    <ClInclude Include="..\..\..\Render\LOAnimation.h" />
+    <ClInclude Include="..\..\..\Render\LOEffect.h" />
+    <ClInclude Include="..\..\..\Render\LOFontBase.h" />
+    <ClInclude Include="..\..\..\Render\LOFontInfo.h" />
+    <ClInclude Include="..\..\..\Render\LOImageModule.h" />
+    <ClInclude Include="..\..\..\Render\LOLayer.h" />
+    <ClInclude Include="..\..\..\Render\LOLayerInfo.h" />
+    <ClInclude Include="..\..\..\Render\LOMatrix2d.h" />
+    <ClInclude Include="..\..\..\Render\LOSurface.h" />
+    <ClInclude Include="..\..\..\Render\LOTexture.h" />
+    <ClInclude Include="..\..\..\Scripter\Buil_in_script.h" />
+    <ClInclude Include="..\..\..\Scripter\FuncInterface.h" />
+    <ClInclude Include="..\..\..\Scripter\GBK.h" />
+    <ClInclude Include="..\..\..\Scripter\LOCodePage.h" />
+    <ClInclude Include="..\..\..\Scripter\LOScriptPoint.h" />
+    <ClInclude Include="..\..\..\Scripter\LOScriptReader.h" />
+    <ClInclude Include="..\..\..\Scripter\ONSvariable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bzip2\bzip2.vcxproj">
+      <Project>{b57776a2-5bfa-4435-86b0-8e0ef39b0466}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\freetype\freetype.vcxproj">
+      <Project>{1c366ea1-bcdc-4269-9c00-4cbdffc10ae5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jpeg\jpeg.vcxproj">
+      <Project>{4353ac64-90a7-4a34-96d4-fff0ef1ca820}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libogg\libogg.vcxproj">
+      <Project>{cf444404-b5de-4a3c-bdc2-78e007b6774d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libpng\libpng.vcxproj">
+      <Project>{c50c1ab2-bd37-4ca6-9d78-ca781736e478}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libvorbis\libvorbis.vcxproj">
+      <Project>{6fd768d1-8f04-435b-8d41-aa02d66b51f3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL\SDL.vcxproj">
+      <Project>{a9f7be5a-1cdf-4ebe-aff0-145e3e516a32}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL_image\SDL_image.vcxproj">
+      <Project>{aef60a8d-bc9a-494d-b4f4-5c27dcf8cbb5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL_mixer\SDL_mixer.vcxproj">
+      <Project>{86cadb88-6164-4eda-8d7f-e308c4eab7f4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL_ttf\SDL_ttf.vcxproj">
+      <Project>{6950215f-5b79-4c46-989c-e71177fe14cd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\smpeg\smpeg.vcxproj">
+      <Project>{24b31f9c-3b48-4423-a257-700ada662222}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\zlib\zlib.vcxproj">
+      <Project>{ebce474b-ba16-44a2-a34c-411b14828edf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio">
+      <UniqueIdentifier>{561bdd0d-fef0-49a1-93da-71405161e491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{e7d32a00-1453-4b39-b917-8458ba0fb36f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\bitwindow.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\filter.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\filter_2.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\hufftable.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\MPEGaudio.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer1.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer2.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer3.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpegtable.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpegtoraw.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\decoders.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\floatdct.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\gdith.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\jrevdct.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\motionvec.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\MPEGvideo.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\parseblock.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\readfile.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\util.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\video.cpp">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEG.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGlist.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGring.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGstream.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGsystem.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\plaympeg.c" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\COPYING.LIB">
+      <Filter>audio</Filter>
+    </Library>
+    <Library Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\README.LIB">
+      <Filter>audio</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\decoders.h">
+      <Filter>video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\dither.h">
+      <Filter>video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\proto.h">
+      <Filter>video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\util.h">
+      <Filter>video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\video.h">
+      <Filter>video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEG.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGaction.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGaudio.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGerror.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGframe.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGlist.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGring.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGstream.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGsystem.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGvideo.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\AUTHORS">
+      <Filter>audio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\README">
+      <Filter>audio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\COPYRIGHT">
+      <Filter>video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\mmxflags_asm.S">
+      <Filter>video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\mmxidct_asm.S">
+      <Filter>video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\README">
+      <Filter>video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._g++-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\COPYING" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\g++-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\plaympeg.1" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\README" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\README.SDL_mixer" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2-config.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.spec" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.spec.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\TODO" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\VisualC.zip" />
+  </ItemGroup>
+</Project>

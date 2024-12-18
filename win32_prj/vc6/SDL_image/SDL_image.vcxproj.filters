@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2e770a59-09c7-4d0b-8eea-2d0482e77cb6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{42de4e0d-f426-4104-b184-9b348e5237d5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_bmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_gif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_lbm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_pcx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_pnm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_svg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_tga.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_tif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_webp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_WIC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_xcf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_xpm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_xv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_xxx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_image-2.0.5\showimage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_image-2.0.5\miniz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_image-2.0.5\nanosvg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_image-2.0.5\nanosvgrast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_image-2.0.5\SDL_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\SDL2_image-2.0.5\CHANGES.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_image-2.0.5\COPYING.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_image-2.0.5\README-emscripten.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_image-2.0.5\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\Android.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\compile" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_ImageIO.m" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\IMG_UIImage.m" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\SDL2_image.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\SDL2_image.spec" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_image-2.0.5\SDL2_image.spec.in" />
+  </ItemGroup>
+</Project>

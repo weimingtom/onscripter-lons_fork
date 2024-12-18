@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{69930b1b-2ca8-42b9-8459-a698c1be1993}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{60bba209-62d0-4d1d-bfe9-fbfe07f50ad5}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="generate">
+      <UniqueIdentifier>{354dcdb9-9d82-4a93-87b3-574df130a431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{3879b29e-b878-4090-ba33-ebedffc81fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{0cea76e5-3e5e-4254-ab09-1b9c1158a067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="etc">
+      <UniqueIdentifier>{90a6fdbf-bea2-49d4-bc0a-beae72ba13b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{5267dc1e-c392-40fb-a01e-f229ce9832bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripter">
+      <UniqueIdentifier>{cf862384-17bd-4fd2-abec-7790562e9142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b2276546-f2ce-443e-ad69-a575a5e423d1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{bb9d5194-8280-4f25-8eff-c4c68de15683}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\LONS_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_windows_main.c">
+      <Filter>generate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Audio\LOAudioElement.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Audio\LOAudioModule.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\etc\BinArray.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\etc\LOCodePage_.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\etc\LOEvent1.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\etc\LOMessage.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\etc\LOString.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOAnimation.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOEffect.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOFontBase.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOFontInfo.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOImageModule.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOImageModule2.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOImageModule_command.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOLayer.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOLayerInfo.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOMatrix2d.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOSurface.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Render\LOTexture.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\FuncInterface.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\LOCodePage.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\LOScriptPoint.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\LOScriptReader.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\LOScriptReader_command.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Scripter\ONSvariable.cpp">
+      <Filter>Scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\File\LOCompressInfo.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\File\LOFileModule.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\File\LOPackFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ons-en.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="onscripter.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="0.txt">
+      <Filter>test</Filter>
+    </Text>
+    <Text Include="vc6_change.txt">
+      <Filter>test</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="default.ttf">
+      <Filter>test</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Audio\LOAudioElement.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Audio\LOAudioModule.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\BinArray.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\GBK.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\LOCodePage_.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\LOEvent1.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\LOMessage.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\LOStack.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\etc\LOString.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOAnimation.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOEffect.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOFontBase.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOFontInfo.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOImageModule.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOLayer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOLayerInfo.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOMatrix2d.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOSurface.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Render\LOTexture.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\Buil_in_script.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\FuncInterface.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\GBK.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\LOCodePage.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\LOScriptPoint.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\LOScriptReader.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Scripter\ONSvariable.h">
+      <Filter>Scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\consola.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\LOCompressInfo.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\LOFileModule.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\LOPackFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\SiYuanCN.h">
+      <Filter>File</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

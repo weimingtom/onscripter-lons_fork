@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{86CADB88-6164-4EDA-8D7F-E308C4EAB7F4}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\SDL2-2.0.10\include;..\SDL;..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity;..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi;..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libvorbis-1.2.0\include;..\..\..\extlib\src\smpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0400;BUILD_SDL;_WIN32;MUSIC_WAV;MUSIC_MID;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;MUSIC_OGG;MUSIC_MP3;DECLSPEC=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\SDL_mixer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\SDL_mixer.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\SDL_mixer.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\SDL2-2.0.10\include;..\SDL;..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity;..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi;..\..\..\extlib\src\libogg-1.1.3\include;..\..\..\extlib\src\libvorbis-1.2.0\include;..\..\..\extlib\src\smpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WIN32_WINNT=0x0400;BUILD_SDL;_WIN32;WAV_MUSIC;MOD_MUSIC;MID_MUSIC;USE_TIMIDITY_MIDI;USE_NATIVE_MIDI;OGG_MUSIC;MP3_MUSIC;DECLSPEC=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\SDL_mixer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\SDL_mixer.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\SDL_mixer.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_common.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\common.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\instrum.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\mix.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\options.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\output.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\playmidi.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\readmidi.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\resample.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\tables.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\timidity.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effects_internal.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_aiff.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_voc.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\mixer.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_cmd.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_flac.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_fluidsynth.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mad.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mikmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_modplug.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mpg123.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_nativemidi.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_ogg.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_opus.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_timidity.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_wav.h" />
+    <ClInclude Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL_mixer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_common.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_haiku.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_mac.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_macosx.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\native_midi\native_midi_win32.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\common.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\instrum.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\mix.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\output.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\playmidi.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\readmidi.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\resample.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\tables.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\timidity.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effect_position.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effect_stereoreverse.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\effects_internal.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_aiff.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\load_voc.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\mixer.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_cmd.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_flac.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_fluidsynth.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mad.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mikmod.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_modplug.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_mpg123.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_nativemidi.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_ogg.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_opus.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_timidity.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\music_wav.c" />
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\playmus.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\playwave.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\Android.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\COPYING" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\FAQ" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\README" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\timidity\TODO" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\Android.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL2_mixer.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\SDL2_mixer.spec.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\CHANGES.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\COPYING.txt" />
+    <Text Include="..\..\..\extlib\src\SDL2_mixer-2.0.4\README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

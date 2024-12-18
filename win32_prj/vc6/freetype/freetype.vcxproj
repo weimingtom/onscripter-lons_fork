@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{1C366EA1-BCDC-4269-9C00-4CBDFFC10AE5}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\freetype-2.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\freetype.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\freetype.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\freetype.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\freetype-2.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\freetype.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\freetype.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\freetype.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\builds\win32\ftdebug.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afangles.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afcjk.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afdummy.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afglobal.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afhints.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afindic.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aflatin.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aflatin2.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afloader.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afmodule.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afwarp.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftapi.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftbase.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftcalc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftdbgmem.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftdebug.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftgloadr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftgxval.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftinit.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftlcdfil.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftnames.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftotval.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftoutln.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftrfork.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftstream.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\fttrigon.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\fttype1.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\base\ftutil.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcache.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcbasic.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftccache.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftccmap.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcglyph.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcimage.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcmanag.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcmru.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcsbits.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cff.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffcmap.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffdrivr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffgload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffparse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidgload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidparse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidriver.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvalid.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvbsln.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvcommn.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvfeat.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvfgen.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvjust.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvkern.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvlcar.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmod.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort0.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort2.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort4.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort5.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx0.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx2.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx4.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx5.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvopbd.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvprop.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvtrak.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvalid.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvbase.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvcommn.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvgdef.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvgpos.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvgsub.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvjstf.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvmod.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\afmparse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psauxmod.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psconv.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\t1cmap.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\t1decode.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshalgo.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshglob.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshmod.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshrec.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\psmodule.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\psnames.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sfdriver.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sfobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttbdf.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttcmap.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttkern.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttmtx.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttpost.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttsbit.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttsbit0.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\ftgrays.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\ftsmooth.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\smooth.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\apinames.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\test_afm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\test_bbox.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\test_trig.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttdriver.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttgload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttgxvar.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttinterp.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttobjs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttpload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1afm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1driver.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1gload.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1load.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1objs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1parse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\type1.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\devel\ft2build.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\devel\ftoption.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\services\svxf86nm.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\autohint.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftdriver.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\internal.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\pcftypes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\psaux.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\pshints.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\t1types.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\freetype.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftbbox.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftbdf.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftbitmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftcache.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftchapters.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\fterrdef.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\fterrors.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftgasp.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftglyph.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftgxval.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftgzip.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftimage.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftincrem.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftlist.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftlzw.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftmac.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftmm.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftmodapi.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftmoderr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftotval.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftoutln.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftpfr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftrender.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftsizes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftsnames.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftstroke.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftsynth.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftsystem.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\fttrigon.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\fttypes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ftxf86.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\t1tables.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ttnameid.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\tttables.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\tttags.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\freetype\ttunpat.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\include\ft2build.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afangles.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afcjk.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afdummy.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aferrors.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afglobal.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afhints.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afindic.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aflatin.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aflatin2.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afloader.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afmodule.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\aftypes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\afwarp.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftccache.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftccback.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcerror.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcglyph.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcimage.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcmanag.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcmru.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\ftcsbits.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffcmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffdrivr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cfferrs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffgload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cffparse.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cfftoken.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\cfftypes.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\ciderrs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidgload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidparse.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidriver.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\cidtoken.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvalid.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvcommn.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxverror.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvfeat.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmort.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\gxvmorx.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvalid.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvcommn.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otverror.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvgpos.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\otvmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\afmparse.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psauxerr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psauxmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psconv.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\psobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\t1cmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\t1decode.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshalgo.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshglob.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshmod.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshnterr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\pshrec.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\psmodule.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\psnamerr.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\pstables.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sfdriver.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sferrors.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\sfobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttbdf.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttcmap.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttkern.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttmtx.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttpost.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\ttsbit.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\ftgrays.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\ftsmerrs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\ftsmooth.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttdriver.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\tterrors.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttgload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttgxvar.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttinterp.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttobjs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\ttpload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1afm.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1driver.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1errors.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1gload.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1load.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1objs.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1parse.h" />
+    <ClInclude Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\t1tokens.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\autofit\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cache\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cff\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\cid\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\README" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\gxvalid\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\otvalid\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psaux\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\pshinter\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\psnames\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\sfnt\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\smooth\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\cordic.py" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\glnames.py" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\tools\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\truetype\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\module.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\type1\rules.mk" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\src\Jamfile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\objs\README" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\ChangeLog" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\ChangeLog.20" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\ChangeLog.21" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\ChangeLog.22" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\Makefile" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\modules.cfg" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\README" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\README.CVS" />
+    <CustomBuild Include="..\..\..\extlib\src\freetype-2.3.5\version.sed" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

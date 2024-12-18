@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{3b3c576b-2bb1-43c5-b2c8-ac6d1dd64634}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="lib\books">
+      <UniqueIdentifier>{c76c5e1a-e82a-48dc-a1e2-2ba4e71549bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\books\coupled">
+      <UniqueIdentifier>{4ced8532-c7d1-4dc4-9b45-9f631279dcc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\books\floor">
+      <UniqueIdentifier>{33f22137-4ac6-47c1-827e-7a49a1d45ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\books\uncoupled">
+      <UniqueIdentifier>{f881fbf6-fade-4c3c-8bb4-10852b2caaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\modes">
+      <UniqueIdentifier>{5ed3c7f1-de97-4f4a-a362-14b42493e918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{1c80d562-be34-41b2-8c49-a0e0b16562e7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="include\vorbis">
+      <UniqueIdentifier>{2dde18c9-986b-41b1-9d3e-a84d3565159b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vq">
+      <UniqueIdentifier>{835907a3-7d0b-4d0f-aee3-52046baebbf5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\coupled\res_books_stereo.h">
+      <Filter>lib\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\floor\floor_books.h">
+      <Filter>lib\books\floor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\books\uncoupled\res_books_uncoupled.h">
+      <Filter>lib\books\uncoupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\floor_all.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_11.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_16.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_44.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\psych_8.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_16.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_44.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_44u.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\residue_8.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_11.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_16.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_22.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_32.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_44.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_44u.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_8.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\modes\setup_X.h">
+      <Filter>lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\backends.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\bitrate.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codebook.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codec_internal.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\envelope.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\highlevel.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup_data.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lpc.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lsp.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\masking.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mdct.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\misc.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\os.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psy.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\registry.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\scales.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\smallft.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\window.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\codec.h">
+      <Filter>include\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\vorbisenc.h">
+      <Filter>include\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\include\vorbis\vorbisfile.h">
+      <Filter>include\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\bookutil.h">
+      <Filter>vq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\localcodebook.h">
+      <Filter>vq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqext.h">
+      <Filter>vq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqgen.h">
+      <Filter>vq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqsplit.h">
+      <Filter>vq</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\analysis.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\barkmel.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\bitrate.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\block.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\codebook.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\envelope.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\floor0.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\floor1.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\info.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookup.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lpc.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lsp.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mapping0.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\mdct.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psy.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\psytune.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\registry.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\res0.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\sharedbook.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\smallft.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\synthesis.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\tone.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\vorbisenc.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\vorbisfile.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\window.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\bookutil.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\build.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\cascade.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\distribution.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\genericdata.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\huffbuild.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticebuild.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticehint.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticepare.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\latticetune.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\lspdata.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\metrics.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residuedata.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residuesplit.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\run.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\train.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqgen.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\vqsplit.c">
+      <Filter>vq</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\libvorbis-1.2.0\todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\lookups.pl">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\Makefile.am">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\lib\Makefile.in">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\16.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\16u.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c-1.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c0.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c1.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c2.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c3.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c4.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c5.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c6.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c7.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c8.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44c9.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u0.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u1.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u2.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u3.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u4.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u5.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u6.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u7.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u8.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\44u9.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\8.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\8u.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\auxpartition.pl">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_11.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_22.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\floor_44.vqs">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\make_floor_books.pl">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\make_residue_books.pl">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\Makefile.am">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\Makefile.in">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vq\residue_entropy">
+      <Filter>vq</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\acinclude.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\AUTHORS" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.h.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\COPYING" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\libvorbis.spec.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\README" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbis.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisenc-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisenc.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisfile-uninstalled.pc.in" />
+    <CustomBuild Include="..\..\..\extlib\src\libvorbis-1.2.0\vorbisfile.pc.in" />
+  </ItemGroup>
+</Project>

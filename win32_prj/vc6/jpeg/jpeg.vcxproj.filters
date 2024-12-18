@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d8362d62-5095-4063-bbda-8e752c4d932f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{61d139f1-c2d7-49da-925f-09d29291370a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="generate">
+      <UniqueIdentifier>{7557f5ad-07ac-4806-a992-e57c30b320a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\ansi2knr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\cdjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\cjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\ckconfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\djpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\example.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcapimin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcapistd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jccoefct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jccolor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcdctmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jchuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcinit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcmainct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcmarker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcmaster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcomapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcphuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcprepct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jcsample.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jctrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdapimin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdapistd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdatadst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdatasrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdcoefct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdcolor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jddctmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdhuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdinput.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdmainct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdmarker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdmaster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdmerge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdphuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdpostct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdsample.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jdtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jfdctflt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jfdctfst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jfdctint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jidctflt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jidctfst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jidctint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jidctred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemansi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemdos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemmac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jmemnobs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jpegtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jquant1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jquant2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\jutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdbmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdcolmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdgif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdjpgcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdppm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdrle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdswitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\rdtarga.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\transupp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrbmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrgif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrjpgcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrppm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrrle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\extlib\src\jpeg-6b\wrtarga.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\cderror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\cdjpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jchuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jdct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jdhuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jinclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jmemsys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jmorecfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jpegint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jpeglib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\jversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\extlib\src\jpeg-6b\transupp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jconfig.h">
+      <Filter>generate</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\extlib\src\jpeg-6b\change.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\ansi2knr.1" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\cjpeg.1" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\djpeg.1" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.bcc" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.cfg" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.dj" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.mac" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.manx" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.mc6" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.sas" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.st" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.vc" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.vms" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jconfig.wat" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jmemdosa.asm" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\jpegtran.1" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\ltconfig" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makcjpeg.st" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makdjpeg.st" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makeapps.ds" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.ansi" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.bcc" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.cfg" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.dj" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.manx" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.mc6" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.mms" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.sas" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.unix" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.vc" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.vms" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makefile.wat" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makelib.ds" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makeproj.mac" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makljpeg.st" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\maktjpeg.st" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\makvms.opt" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\rdjpgcom.1" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\README" />
+    <CustomBuild Include="..\..\..\extlib\src\jpeg-6b\wrjpgcom.1" />
+  </ItemGroup>
+</Project>

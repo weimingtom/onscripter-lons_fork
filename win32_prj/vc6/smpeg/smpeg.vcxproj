@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{24B31F9C-3B48-4423-A257-700ADA662222}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\SDL2-2.0.10\include;..\SDL;..\..\..\extlib\src\smpeg2-2.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOCONTROLS;THREADED_AUDIO;DECLSPEC=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\smpeg.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\smpeg.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\smpeg.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\extlib\src\SDL-1.2.13\include;..\SDL;..\..\..\extlib\src\smpeg2-2.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOCONTROLS;THREADED_AUDIO;DECLSPEC=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\smpeg.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\smpeg.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\smpeg.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\AUTHORS" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\README" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\COPYRIGHT" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\mmxflags_asm.S" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\mmxidct_asm.S" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\video\README" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._g++-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\._install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\aclocal.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\autogen.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\CHANGES" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\config.guess" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\config.sub" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\configure" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\configure.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\COPYING" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\depcomp" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\g++-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\gcc-fat.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\install-sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\ltmain.sh" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\Makefile.am" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\Makefile.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\missing" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\mkinstalldirs" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\plaympeg.1" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\README" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\README.SDL_mixer" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2-config.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.m4" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.spec" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg2.spec.in" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\TODO" />
+    <CustomBuild Include="..\..\..\extlib\src\smpeg2-2.0.0\VisualC.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\bitwindow.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\filter.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\filter_2.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\hufftable.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\MPEGaudio.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer1.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer2.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpeglayer3.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpegtable.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\mpegtoraw.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\decoders.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\floatdct.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\gdith.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\jrevdct.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\motionvec.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\MPEGvideo.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\parseblock.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\readfile.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\util.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\video\video.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEG.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGlist.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGring.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGstream.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGsystem.cpp" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\plaympeg.c" />
+    <ClCompile Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\COPYING.LIB">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\..\extlib\src\smpeg2-2.0.0\audio\README.LIB">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\decoders.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\dither.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\proto.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\util.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\video\video.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEG.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGaction.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGaudio.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGerror.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGframe.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGlist.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGring.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGstream.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGsystem.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\MPEGvideo.h" />
+    <ClInclude Include="..\..\..\extlib\src\smpeg2-2.0.0\smpeg.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
